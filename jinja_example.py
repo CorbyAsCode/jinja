@@ -19,7 +19,7 @@ def print_html_doc():
     # Notice the use of trim_blocks, which greatly helps control whitespace.
     j2_env = Environment(loader=FileSystemLoader(THIS_DIR),
                          trim_blocks=True)
-    print j2_env.get_template('test_template.html').render(env)
+    print j2_env.get_template('test_template').render(env)
         #title='Hello Gist from GitHub'
     #)
 
