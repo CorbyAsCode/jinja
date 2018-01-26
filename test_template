@@ -1,0 +1,6 @@
+
+{% if AGS %}
+My AGS = {{ AGS }}
+{% else %}
+I don't have an AGS :(
+{% endif %}
