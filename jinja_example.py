@@ -21,8 +21,6 @@ def print_html_doc():
                          trim_blocks=True,
                          lstrip_blocks=True)
     print j2_env.get_template('test_template').render(env)
-        #title='Hello Gist from GitHub'
-    #)
 
 if __name__ == '__main__':
     print_html_doc()
