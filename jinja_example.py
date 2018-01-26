@@ -18,7 +18,8 @@ def print_html_doc():
     # Create the jinja2 environment.
     # Notice the use of trim_blocks, which greatly helps control whitespace.
     j2_env = Environment(loader=FileSystemLoader(THIS_DIR),
-                         trim_blocks=True)
+                         trim_blocks=True,
+                         lstrip_blocks=True)
     print j2_env.get_template('test_template').render(env)
         #title='Hello Gist from GitHub'
     #)
